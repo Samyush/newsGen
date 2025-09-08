@@ -6,8 +6,12 @@ from newsapi import NewsApiClient
 
 # Load API keys
 load_dotenv()
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-NEWSAPI_KEY = os.getenv("NEWSAPI_KEY")
+
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+hf_token = st.secrets["HF_TOKEN"]
+openai_key = st.secrets["OPENAI_API_KEY"]
+NEWSAPI_KEY = st.secrets["NEWSAPI_KEY"]
+
 
 if not GROQ_API_KEY or not NEWSAPI_KEY:
     st.error("Missing GROQ_API_KEY or NEWSAPI_KEY in environment.")
