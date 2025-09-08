@@ -1,11 +1,9 @@
 import os
 import requests
 import streamlit as st
-from dotenv import load_dotenv
 from newsapi import NewsApiClient
 
 # Load API keys
-load_dotenv()
 
 GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 hf_token = st.secrets["HF_TOKEN"]
