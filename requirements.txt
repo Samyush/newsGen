@@ -1,0 +1,6 @@
+newsapi-python
+python-dotenv
+requests
+streamlit
+openai
+groq
