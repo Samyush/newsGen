@@ -1,5 +1,3 @@
-!pip install groq news-google-api newsapi-python python-dotenv requests
-
 import os
 import requests
 import streamlit as st
